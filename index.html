@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List View And Grid View </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9bf81300c6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Image Grid</h1>
+        <p>Click on the button to change the grid view</p>
+        <div class="icons">
+            <i class="fa-solid fa-square" onclick="fullColumn()"></i>
+            <i class="fa-solid fa-th-large" onclick="twoColumns()"></i>
+            <i class="fa-solid fa-th" onclick="fourColumns()"></i>
+        </div>
+    </div>
+    <div class="row">
+        <div id="col1">
+            <img src="./images/1.png" >
+            <img src="./images/2.jpg" >
+            <img src="./images/3.jpg" >
+            <img src="./images/4.avif" >
+            <img src="./images/5.avif" >
+            <img src="./images/6.avif" >
+            <img src="./images/7.avif" >
+            <img src="./images/8.avif" >
+            <img src="./images/9.jpg" >
+            <img src="./images/10.jpg" >
+        </div>
+        <div id="col2">
+            <img src="./images/11.webp" >
+            <img src="./images/12.jpg" >
+            <img src="./images/13.webp" >
+            <img src="./images/14.jpg" >
+            <img src="./images/15.webp" >
+            <img src="./images/16.webp" >
+            <img src="./images/17.jfif" >
+            <img src="./images/18.jpg" >
+            <img src="./images/19.jpg" >
+            <img src="./images/20.webp" >
+        </div>
+        <div id="col3">
+            <img src="./images/1.png" >
+            <img src="./images/2.jpg" >
+            <img src="./images/3.jpg" >
+            <img src="./images/4.avif" >
+            <img src="./images/5.avif" >
+            <img src="./images/6.avif" >
+            <img src="./images/7.avif" >
+            <img src="./images/8.avif" >
+            <img src="./images/9.jpg" >
+            <img src="./images/10.jpg" >
+        </div>
+        <div id="col4">
+            <img src="./images/11.webp" >
+            <img src="./images/12.jpg" >
+            <img src="./images/13.webp" >
+            <img src="./images/14.jpg" >
+            <img src="./images/15.webp" >
+            <img src="./images/16.webp" >
+            <img src="./images/17.jfif" >
+            <img src="./images/18.jpg" >
+            <img src="./images/19.jpg" >
+            <img src="./images/20.webp" >
+        </div>
+    </div>
+
+    <script>
+        function fullColumn(){
+            var col1 = document.getElementById("col1");
+            var col2 = document.getElementById("col2");
+            var col3 = document.getElementById("col3");
+            var col4 = document.getElementById("col4");
+            
+            col1.style.width = "100%";
+            col2.style.width = "100%";
+            col3.style.width = "100%";
+            col4.style.width = "100%";
+        }
+
+        function twoColumns(){
+            var col1 = document.getElementById("col1");
+            var col2 = document.getElementById("col2");
+            var col3 = document.getElementById("col3");
+            var col4 = document.getElementById("col4");
+
+            col1.style.width = "50%";
+            col2.style.width = "50%";
+            col3.style.width = "50%";
+            col4.style.width = "50%";
+        }
+
+        function fourColumns(){
+            var col1 = document.getElementById("col1");
+            var col2 = document.getElementById("col2");
+            var col3 = document.getElementById("col3");
+            var col4 = document.getElementById("col4");
+
+            col1.style.width = "25%";
+            col2.style.width = "25%";
+            col3.style.width = "25%";
+            col4.style.width = "25%";
+        }
+
+5
+    </script>
+</body>
+</html>
